@@ -8,7 +8,7 @@ config = {
   
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: './src/bundle.js'
   },
 
   module: {
@@ -40,9 +40,7 @@ config = {
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-      ignoreOrder: false,
+      filename: './css/[name].css',
     }),
   ],
 
