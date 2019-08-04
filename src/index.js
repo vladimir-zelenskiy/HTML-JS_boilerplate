@@ -1,3 +1,6 @@
-import "./style.css";
+import './style.css';
 
-console.log('hello world!');
+console.log({
+  a: '2',
+  b: '3',
+});

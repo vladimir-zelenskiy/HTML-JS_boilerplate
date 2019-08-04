@@ -1,22 +1,22 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 config = {
   entry: { main: './src/index.js' },
-  
+
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: './src/bundle.js'
+    filename: './src/bundle.js',
   },
 
   module: {
-    rules : [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
@@ -30,7 +30,7 @@ config = {
           'css-loader',
         ],
       },
-    ]
+    ],
   },
 
   plugins: [
