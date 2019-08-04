@@ -17,8 +17,9 @@ npm run lint // lints js files
 Recommended for development: 
 ```
 npm run start // builds with hot reload of css/html/js
-New tab in browser will be opened automatically on localhost:8080
 ```
+New tab in browser will be opened automatically on localhost:8080
+
 
 It's recommended to use vsCode with EsLint plugin and option: 
 ```
