@@ -30,6 +30,17 @@ config = {
           'css-loader',
         ],
       },
+      {
+        test: /\.png$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'res/img',
+            esModule: false,
+          },
+        }
+      }
     ],
   },
 

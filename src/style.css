@@ -1,3 +1,250 @@
-div {
-  color: blue;
+
+
+.flex-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	flex-direction: row;
+	justify-content: space-around;
 }
+
+.column {
+	flex-direction: column
+}
+
+.shadow {
+	box-shadow: 0px 1px 4px -1px #000000;
+}
+
+.to-do-list-body {
+	font-family: Sans Serif;
+	font-size: 18px;
+}
+
+.to-do-list-block {
+	margin-left: 23%;
+	margin-right: 23%;
+	margin-top: 42px;
+	margin-bottom: 42px;
+	border-width: 1px;
+	border-style: solid;
+	border-color:lightgray;
+}
+
+.to-do-list-header {
+	background-color: rgb(65, 149, 235);
+	color: white;
+}
+
+.to-do-list-body {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.to-do-tasks-list {
+	flex-flow: column;
+	margin: 25px 0px 5px 0px;
+}
+
+.task-list-header {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px 10px 10px;
+}
+
+.title-text {
+	padding-top: 19px;
+	padding-bottom: 19px;
+	font-family: sans-serif;
+	font-size: 21px;
+}
+
+.no-border {
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+}
+
+.bottom-border {
+	border-width: 0px 0px 1px 0px;
+}
+
+.search-input {
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: white;
+	margin-top: 19px;
+	margin-bottom: 19px;
+}
+
+.search-task-input {
+	background-color: rgb(65, 149, 235);
+	color: white;
+}
+
+.search-task-input::placeholder {
+	color: white;
+	opacity: 1;
+	background-color: rgb(65, 149, 235);
+	font-size: 14px;
+}
+
+.new-task-input {
+	width: 60%;
+}
+
+.add-task-button {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-width: 0px;
+	background-color: white;
+	padding: 10px 27px 10px 27px;
+}
+
+
+.task-element {
+	box-shadow: 0px 1px 4px -1px #000000;
+	margin: 5px 5px 5px 5px;
+}
+
+.task-data {
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	display: flex;
+
+}
+
+.task-description {
+	width: 70%;
+	padding-top: 7px;
+	padding-left: 10px;
+}
+
+.task-state-checkbox {
+	display: inline-block;
+	border-color:  #3998f5;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	width: 18px;
+	height: 18px;
+	margin: 3px 3px 3px 3px;
+}
+
+.task-checked {
+	background-color: #3998f5;
+}
+
+.task-checked::before {
+	display: inline-block;
+	content: '';
+	border-color: white;
+	border-style: solid;
+	border-width: 0px 3px 3px 0px;
+	height: 14px;
+	width: 9px;
+	top: -3px;
+	left: 3px;
+	transform: rotate(45deg);
+	position: relative;
+}
+
+.hidden {
+	/*visibility: hidden;*/
+	display: none;
+}
+
+.clear-list {
+	text-decoration: underline;
+	margin: 10px 10px 10px 10px;
+}
+
+.tasks-footer {
+	display: flex;
+	justify-content: right;
+}
+
+.remove-task {
+	background-blend-mode: multiply;
+	background-color: white;
+	padding: 5px 5px 15px 0px;
+}
+
+.created {
+	color: #919191;
+}
+
+.font-tahoma {
+	font-family: Tahoma;
+}
+
+.date-font {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.offset-horizontally {
+	padding: 0px 5px 0px 5px;
+}
+
+.left-border {
+	border-width: 0px 0px 0px 1px;
+	border-style: solid;
+	border-color:gray;
+}
+
+.select-sorting {
+	position: relative;
+}
+
+.select-sorting select {
+	display: none;
+}
+
+.select-sorting {
+	background-color: white;
+	font-size: 15px;
+}
+
+.select-sorting:after {
+	position: absolute;
+  	content: "";
+  	top: 16px;
+  	right: -5px;
+  	width: 0;
+  	height: 0;
+  	border: 6px solid transparent;
+  	border-color: black transparent transparent transparent;
+}
+
+.select-sorting-selected.select-sorting-selected-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+  }
+
+  .select-sorting-items div,.select-sorting {
+	color: black;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  }
+
+  .select-sorting-items {
+	position: absolute;
+	background-color: white;
+	font-size: 15px;
+
+	z-index: 99;
+  }
+
+  .select-sorting-hide {
+	display: none;
+  }
+
+  .select-sorting-items div:hover, .select-sorting-same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+  }

@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-  <head>
-    <title>HTML + JS boilerplate project</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  <body>
-    <div>Hello, world</div>
-  </body>
+
+<head>
+	<title>Final Task</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+	<div class="to-do-list-block">
+
+		<div class="flex-container to-do-list-header">
+			<span class="title-text">Todo List</span>
+			<div class="search-input">
+				<input id="searchTaskInput" class="search-task-input no-border" type="search" placeholder="Search..." />
+				<input id="searchTaskButton" type="image" src="res/img/search.png"/>
+			</div>
+		</div>
+
+		<div class="flex-container to-do-list-body column font-tahoma">
+
+			<div>
+				<div class="flex-container">
+					<input id="newTaskDescription" class="new-task-input bottom-border" type="text"
+						placeholder="New task..." />
+					<input id="addTaskButton" class="add-task-button shadow" type="button" value="ADD" />
+				</div>
+			</div>
+
+			<div id="openTasksBlock" class="to-do-tasks-list">
+				<div class="task-list-header">
+					<span>Open</span>
+					<div>
+						<div id="openTasksSortingDiv" class="select-sorting">Text (ASC)</div>
+						<div id="openTasksSortingItemsDiv" class="select-sorting-items select-sorting-hide">
+							<div id="openTasksSorting_descriptionAsc">Text (ASC)</div>
+							<div id="openTasksSorting_descriptionDesc">Text (DESC)</div>
+							<div id="openTasksSorting_createdAsc">Date creation (ASC)</div>
+							<div id="openTasksSorting_createdDesc">Date creation (DESC)</div>
+						</div>
+					</div>
+				</div>
+				<div id="openTasksListContainer" class="open-tasks-list-container">
+				</div>
+				<div class="tasks-footer">
+					<span id="clearOpenList" class="clear-list">Clear "Open" list</span>
+				</div>
+			</div>
+
+			<div id="doneTasksBlock" class="to-do-tasks-list">
+				<div class="task-list-header">
+					<span>Done</span>
+					<div>
+						<div id="doneTasksSortingDiv" class="select-sorting">Text (ASC)</div>
+						<div id="doneTasksSortingItemsDiv" class="select-sorting-items select-sorting-hide">
+							<div id="doneTasksSorting_descriptionAsc">Text (ASC)</div>
+							<div id="doneTasksSorting_descriptionDesc">Text (DESC)</div>
+							<div id="doneTasksSorting_completedAsc">Due date (ASC)</div>
+							<div id="doneTasksSorting_completedDesc">Due date (DESC)</div>
+						</div>
+					</div>
+				</div>
+				<div id="doneTasksListContainer" class="done-tasks-list-container">
+				</div>
+				<div class="tasks-footer">
+					<span id="clearDoneList" class="clear-list">Clear "Done" list</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
 </html>
