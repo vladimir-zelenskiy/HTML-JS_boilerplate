@@ -115,7 +115,7 @@
 	padding: 10px 10px 10px 10px;
 	border-radius: 5px;
 	display: flex;
-
+	flex-direction: row;
 }
 
 .task-description {
@@ -133,6 +133,9 @@
 	width: 18px;
 	height: 18px;
 	margin: 3px 3px 3px 3px;
+	min-width: 18px;
+	min-height: 18px;
+	flex: initial;
 }
 
 .task-checked {
@@ -171,7 +174,7 @@
 .remove-task {
 	background-blend-mode: multiply;
 	background-color: white;
-	padding: 5px 5px 15px 0px;
+	padding: 0px 5px 0px 5px;
 }
 
 .created {
